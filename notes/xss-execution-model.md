@@ -18,3 +18,20 @@ Execution timing:
 
 Rule:
 Events trigger execution, but sinks cause XSS.
+
+## Executable Contexts
+
+JavaScript can execute without <script> tags.
+
+Common execution contexts:
+- Event handler attributes (onerror, onclick, onload, etc.)
+- javascript: URLs in href or src
+- DOM insertion using innerHTML
+
+Non-executable by default:
+- data-* attributes
+- class, id, title
+- textContent / innerText
+
+Payload choice depends on the execution context, not filters.
+
