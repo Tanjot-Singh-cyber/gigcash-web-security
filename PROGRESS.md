@@ -29,3 +29,5 @@ Day 14 – Context awareness (HTML, attribute, JS, URL contexts) – DONE
 Day 15 – DOM XSS lab series consolidation (multiple sinks, same source) – DONE
 
 Day 16 – Attribute-context XSS introduction (breaking out of attributes) – DONE
+
+Day 17 – Reflected XSS in JavaScript string (script tag context) - DONE
