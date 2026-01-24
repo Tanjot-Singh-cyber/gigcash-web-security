@@ -31,3 +31,7 @@ Day 15 – DOM XSS lab series consolidation (multiple sinks, same source) – DO
 Day 16 – Attribute-context XSS introduction (breaking out of attributes) – DONE
 
 Day 17 – Reflected XSS in JavaScript string (script tag context) - DONE
+
+Day 18 – XSS consolidation & decision to park advanced WAF/CSP labs – DONE
+
+Day 19 – CSRF fundamentals (authentication vs intent, request flow) – DONE
