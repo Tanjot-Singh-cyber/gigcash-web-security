@@ -38,3 +38,6 @@ Day 19 – CSRF fundamentals (authentication vs intent, request flow) – DONE
 
 Day 20 – CSRF defenses (thinking-only: tokens, SameSite, Origin/Referer, POST myth) – DONE
 
+Day 21 – CSRF vulnerability with no defenses (request analysis + exploit reasoning) – DONE
+
+
