@@ -35,3 +35,6 @@ Day 17 – Reflected XSS in JavaScript string (script tag context) - DONE
 Day 18 – XSS consolidation & decision to park advanced WAF/CSP labs – DONE
 
 Day 19 – CSRF fundamentals (authentication vs intent, request flow) – DONE
+
+Day 20 – CSRF defenses (thinking-only: tokens, SameSite, Origin/Referer, POST myth) – DONE
+
