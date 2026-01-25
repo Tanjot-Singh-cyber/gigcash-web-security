@@ -40,4 +40,8 @@ Day 20 – CSRF defenses (thinking-only: tokens, SameSite, Origin/Referer, POST 
 
 Day 21 – CSRF vulnerability with no defenses (request analysis + exploit reasoning) – DONE
 
+Day 22 – CSRF defenses & failure cases (tokens, SameSite, Origin/Referer, POST myth) – DONE
+
+
+
 
