@@ -42,7 +42,8 @@ Day 21 – CSRF vulnerability with no defenses (request analysis + exploit reaso
 
 Day 22 – CSRF defenses & failure cases (tokens, SameSite, Origin/Referer, POST myth) – DONE
 
-Day 23 – CSRF token bypass via method confusion (GET vs POST) – DONE
+Day 23 – CSRF (request-method-dependent validation) – ANALYZED, PARKED
+
 
 
 
