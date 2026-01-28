@@ -46,6 +46,9 @@ Day 23 – CSRF (request-method-dependent validation) – ANALYZED, PARKED
 
 Day 24 – Access control fundamentals (authentication vs authorization, Subject/Object/Action, IDOR mental model) – DONE
 
+Day 25 – Access control fundamentals (auth vs authz, subject-object-action model) – DONE
+
+
 
 
 
