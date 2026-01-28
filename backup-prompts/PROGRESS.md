@@ -44,6 +44,9 @@ Day 22 – CSRF defenses & failure cases (tokens, SameSite, Origin/Referer, POST
 
 Day 23 – CSRF (request-method-dependent validation) – ANALYZED, PARKED
 
+Day 24 – Access control fundamentals (authentication vs authorization, Subject/Object/Action, IDOR mental model) – DONE
+
+
 
 
 
