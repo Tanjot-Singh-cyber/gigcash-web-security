@@ -50,6 +50,9 @@ Day 25 – Access control fundamentals (auth vs authz, subject-object-action mod
 
 Day 26 – IDOR (horizontal access control) via predictable object IDs – DONE
 
+Day 27 – Vertical Access Control: Unprotected admin functionality (forced browsing, robots.txt disclosure) – DONE
+
+
 
 
 
