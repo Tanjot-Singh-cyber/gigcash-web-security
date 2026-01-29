@@ -48,6 +48,9 @@ Day 24 – Access control fundamentals (authentication vs authorization, Subject
 
 Day 25 – Access control fundamentals (auth vs authz, subject-object-action model) – DONE
 
+Day 26 – IDOR (horizontal access control) via predictable object IDs – DONE
+
+
 
 
 
