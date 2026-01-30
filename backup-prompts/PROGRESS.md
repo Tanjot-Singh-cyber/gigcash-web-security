@@ -52,6 +52,9 @@ Day 26 – IDOR (horizontal access control) via predictable object IDs – DONE
 
 Day 27 – Vertical Access Control: Unprotected admin functionality (forced browsing, robots.txt disclosure) – DONE
 
+Day 28 – Horizontal Access Control (IDOR): identifying object references, modifying IDs to access other users’ data – DONE
+
+
 
 
 
