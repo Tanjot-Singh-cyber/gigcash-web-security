@@ -54,13 +54,4 @@ Day 27 – Vertical Access Control: Unprotected admin functionality (forced brow
 
 Day 28 – Horizontal Access Control (IDOR): identifying object references, modifying IDs to access other users’ data – DONE
 
-
-
-
-
-
-
-
-
-
-
+Day 29 – IDOR: Horizontal privilege escalation via user-controlled identifier – DONE
