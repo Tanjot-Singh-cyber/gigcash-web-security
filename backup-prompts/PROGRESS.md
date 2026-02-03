@@ -58,3 +58,6 @@ Day 29 – IDOR: Horizontal privilege escalation via user-controlled identifier 
 
 Day 30 – IDOR with unpredictable UUIDs: leaking object references via blog content leading to API key disclosure – DONE
 
+Day 31 – Function-Level Access Control (Vertical Privilege Escalation via client-controlled cookie) – DONE
+
+
