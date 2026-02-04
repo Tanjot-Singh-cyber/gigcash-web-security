@@ -60,4 +60,7 @@ Day 30 – IDOR with unpredictable UUIDs: leaking object references via blog con
 
 Day 31 – Function-Level Access Control (Vertical Privilege Escalation via client-controlled cookie) – DONE
 
+Day 32 – Backend trust model: state identification, trust points, and revalidation logic across IDOR, CSRF, XSS, SQLi – DONE
+
+
 
