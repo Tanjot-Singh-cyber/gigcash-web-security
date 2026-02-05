@@ -62,5 +62,8 @@ Day 31 – Function-Level Access Control (Vertical Privilege Escalation via clie
 
 Day 32 – Backend trust model: state identification, trust points, and revalidation logic across IDOR, CSRF, XSS, SQLi – DONE
 
+Day 33 – Chaining trust failures: XSS → IDOR → authentication abuse, impact-driven vulnerability reasoning – DONE
+
+
 
 
