@@ -64,6 +64,8 @@ Day 32 – Backend trust model: state identification, trust points, and revalida
 
 Day 33 – Chaining trust failures: XSS → IDOR → authentication abuse, impact-driven vulnerability reasoning – DONE
 
+Day 34 – Backend trust boundaries & horizontal access control (IDOR) – DONE
+
 
 
 
