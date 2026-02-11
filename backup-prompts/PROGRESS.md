@@ -66,6 +66,9 @@ Day 33 – Chaining trust failures: XSS → IDOR → authentication abuse, impac
 
 Day 34 – Backend trust boundaries & horizontal access control (IDOR) – DONE
 
+Day 35 – Multi-step state trust & password reset poisoning (trusting forwarded headers) – DONE
+
+
 
 
 
