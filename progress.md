@@ -68,6 +68,8 @@ Day 34 – Backend trust boundaries & horizontal access control (IDOR) – DONE
 
 Day 35 – Multi-step state trust & password reset poisoning (trusting forwarded headers) – DONE
 
+Day 36 – Vertical Access Control via Trust Chain Failure – DONE
+
 
 
 
