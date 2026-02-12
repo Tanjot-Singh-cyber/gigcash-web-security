@@ -37,6 +37,11 @@ If the server trusts the Email field over the authenticated session,
 a horizontal account takeover may be possible by changing another
 student’s password.
 
+## Notes on Potential Trust Chaining
+This password change action likely depends on prior authentication
+and session integrity. Additional analysis of login, session renewal,
+and logout flows may be required to fully assess chained trust assumptions.
+
 ## Status
 - No exploitation performed
 - Hypothesis only (analysis phase)
