@@ -74,6 +74,9 @@ Day 36 – Vertical Access Control via Trust Chain Failure – DONE
 
 Day 37 – Identity confusion via client-controlled user context (userId) – DONE
 
+Day 38: Real application state & trust boundary analysis (password change flow) – DONE
+
+
 
 
 
