@@ -1,3 +1,5 @@
+#  Phase 1
+
 Day 1 – XSS basics (what XSS is, why it exists) – DONE
 
 Day 2 – Reflected XSS (basic payloads, visible reflection) – DONE
@@ -69,6 +71,9 @@ Day 34 – Backend trust boundaries & horizontal access control (IDOR) – DONE
 Day 35 – Multi-step state trust & password reset poisoning (trusting forwarded headers) – DONE
 
 Day 36 – Vertical Access Control via Trust Chain Failure – DONE
+
+Day 37 – Identity confusion via client-controlled user context (userId) – DONE
+
 
 
 
