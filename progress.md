@@ -76,6 +76,9 @@ Day 37 – Identity confusion via client-controlled user context (userId) – DO
 
 Day 38: Real application state & trust boundary analysis (password change flow) – DONE
 
+Day 39: Validated password-change flow on a real app; confirmed server-side multi-step state enforcement prevents replay or out-of-context access  – DONE
+
+
 
 
 
