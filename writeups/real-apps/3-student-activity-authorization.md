@@ -1,11 +1,19 @@
-Endpoint: GET /api/getStudentActivity/{StuID}/undefined
+## Authorization Testing (Read-only API)
 
-Findings:
-- Authenticated via session cookie
-- StuID validated against session owner
-- Unchanged request → 200 + empty data
-- Modified StuID → 403 Forbidden ("Invalid student")
+**Target:** mycamu.co.in  
+**Feature:** Student Activity
 
-Conclusion:
+### Work Done
+- Captured `GET /api/getStudentActivity/{StuID}/undefined`
+- Established baseline with own `StuID`
+- Modified `StuID` (single-digit change) to test ownership
+
+### Observations
+- Own `StuID` → `200 OK` with empty data
+- Modified `StuID` → `403 Forbidden` (“Invalid student”)
+- Backend validates `StuID` against authenticated session
+
+### Conclusion
 - Proper authorization enforced
-- No IDOR observed
+- No IDOR or horizontal access issue found
+- Endpoint secure despite weak input handling (`undefined` accepted)
