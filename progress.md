@@ -78,6 +78,8 @@ Day 38: Real application state & trust boundary analysis (password change flow) 
 
 Day 39: Validated password-change flow on a real app; confirmed server-side multi-step state enforcement prevents replay or out-of-context access  – DONE
 
+Day 40 – Authorization Testing (Read-only API)  – DONE
+
 
 
 
