@@ -82,6 +82,8 @@ Day 40 – Authorization Testing (Read-only API)  – DONE
 
 Day 41 — Analyzed LMS state-adjacent endpoint (/lms/update-content-log) for sequence, replay, and auth misuse; confirmed proper session enforcement and no state-chaining vulnerability. – DONE
 
+Day 42 — Exploited a multi-step business logic flaw by corrupting cart state via client-controlled pricing, which was later trusted at checkout, enabling purchase with insufficient funds.  – DONE
+
 
 
 
