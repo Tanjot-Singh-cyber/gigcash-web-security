@@ -84,6 +84,8 @@ Day 41 — Analyzed LMS state-adjacent endpoint (/lms/update-content-log) for se
 
 Day 42 — Exploited a multi-step business logic flaw by corrupting cart state via client-controlled pricing, which was later trusted at checkout, enabling purchase with insufficient funds.  – DONE
 
+Day 43 — Isolated the authoritative patient update request in a SPA and analyzed session trust and object-level authorization for high-impact state changes.  – DONE
+
 
 
 
