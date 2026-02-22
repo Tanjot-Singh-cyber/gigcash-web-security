@@ -86,6 +86,8 @@ Day 42 — Exploited a multi-step business logic flaw by corrupting cart state v
 
 Day 43 — Isolated the authoritative patient update request in a SPA and analyzed session trust and object-level authorization for high-impact state changes.  – DONE
 
+Day 44: Completed PortSwigger business logic lab by tracing server-side cart state, identifying the trusted decision point, and confirming no exploitable validation gap in the checkout flow. – DONE 
+
 
 
 
