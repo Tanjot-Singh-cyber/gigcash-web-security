@@ -70,7 +70,7 @@ This methodology applies across:
 
 ---
 
-## 🛠 Tools Used
+## Tools Used
 - Burp Suite (Proxy, Repeater)
 - Browser DevTools
 - PortSwigger Web Security Academy
