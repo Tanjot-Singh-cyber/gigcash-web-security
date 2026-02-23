@@ -88,6 +88,8 @@ Day 43 — Isolated the authoritative patient update request in a SPA and analyz
 
 Day 44: Completed PortSwigger business logic lab by tracing server-side cart state, identifying the trusted decision point, and confirming no exploitable validation gap in the checkout flow. – DONE 
 
+Day 45: Confirmed that after login the server must derive identity from the session (no userId in requests is correct) and that authorization failures mainly arise from missing object-ownership revalidation across endpoints. – DONE 
+
 
 
 
