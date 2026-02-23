@@ -91,6 +91,7 @@ Day 44: Completed PortSwigger business logic lab by tracing server-side cart sta
 Day 45: Confirmed that after login the server must derive identity from the session (no userId in requests is correct) and that authorization failures mainly arise from missing object-ownership revalidation across endpoints. – DONE 
 
 ---------
+# Phase 2
 
  Moved out of fundamentals and lab-grinding into audit-mode; focus is now on real-world feature auditing, authorization and state-trust reasoning, and producing clear SAFE/WEAK/VULN conclusions with written justification. Labs and tools are used only to confirm reasoning, not to drive learning.
 
