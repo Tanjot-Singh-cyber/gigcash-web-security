@@ -39,7 +39,7 @@ This methodology applies across:
 
 ---
 
-## 📚 What I’ve Covered So Far (Phase 1 – ~70% Complete)
+## What I’ve Covered So Far (Phase 1 – ~70% Complete)
 
 ### Vulnerability Classes
 - Cross-Site Scripting (XSS) – all contexts
@@ -79,7 +79,7 @@ No automation-heavy tools yet — focus is on **understanding before tooling**.
 
 ---
 
-## 🚀 What’s Next (Phase 1 Remaining)
+##  What’s Next (Phase 1 Remaining)
 - Authentication edge cases (session fixation, remember-me, login CSRF)
 - Business logic vulnerabilities
 - File upload & processing trust
