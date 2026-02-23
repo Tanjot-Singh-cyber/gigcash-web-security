@@ -9,7 +9,7 @@ It is a **proof-based learning log** showing how I analyze applications the way 
 
 ---
 
-## 🎯 Goal
+## Goal
 
 - Build strong fundamentals in **Web Application Security**
 - Develop a **state-first, trust-tracing mindset**
@@ -18,7 +18,7 @@ It is a **proof-based learning log** showing how I analyze applications the way 
 
 ---
 
-## 🧠 Core Methodology (Very Important)
+## Core Methodology (Very Important)
 
 For every feature or request, I follow the same workflow:
 
@@ -87,11 +87,11 @@ No automation-heavy tools yet — focus is on **understanding before tooling**.
 - Revision + articulation (writing and explaining findings)
 
 After Phase 1:
-➡️ **Phase 2: Proof + Projects + Light Scripting**
+ **Phase 2: Proof + Projects + Light Scripting**
 
 ---
 
-## 📌 Why This Repo Exists
+## Why This Repo Exists
 
 Most beginners learn *what payload to send*.  
 This repo shows **why the backend breaks**.
@@ -101,7 +101,7 @@ you’re seeing **how I think about applications**.
 
 ---
 
-## 👤 Author
+##  Author
 **Tanjot Singh**  
 AppSec-focused student | Web Security | Backend Trust Analysis
 
