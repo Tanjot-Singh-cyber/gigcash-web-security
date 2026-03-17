@@ -30,4 +30,7 @@ Each lab writeup explains:
 4. Why a specific technique works
 
 Real application findings are **never** documented here.
-See `/writeups` for independent, real-world work.
+See `/findings` for independent, real-world work.
+
+> Note: These are study/revision notes compiled during Phase 1 learning. 
+> Original findings and analysis begin in /findings from Phase 2 onwards.
