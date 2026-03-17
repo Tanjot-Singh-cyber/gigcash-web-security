@@ -1,22 +1,48 @@
-# Gigcash – Web Application Security Journey
+# Gigcash – Web Application Security Research
 
-This repo documents my AppSec learning path called Gigcash — a structured, 
-proof-based roadmap I built to develop real security skills, not just lab scores.
+**Tanjot Singh** | B.Tech CSE, MIET Jammu  
+[LinkedIn](https://www.linkedin.com/in/tanjot-singh-69579a352)
 
-When I look at any application, I first identify what state is being created 
-and what the server trusts. I reason through the flow before I touch anything. 
-Then I test to confirm or break my hypothesis.
+---
 
-I just completed Phase 1 — XSS, SQLi, CSRF, access control, business logic, 
-trust boundary reasoning. Phase 2 starts now: real app analysis, real findings, 
-breaking out of the lab shell.
+## What This Is
+A structured, self-directed AppSec research program built to develop 
+real security skills through lab work, methodology, and real application analysis.
+
+Every target is approached the same way:
+1. Map the state — what is the application tracking?
+2. Identify trust boundaries — what does the server blindly trust?
+3. Form a hypothesis — what could break if that trust is wrong?
+4. Test to confirm or disprove
+
+---
+
+## Current Phase
+**Phase 1 Complete** — Lab foundations across all major web vulnerability classes  
+**Phase 2 Active** — Real application analysis and HackerOne bug bounty testing
+
+---
 
 ## Structure
-- labs/ — Phase 1 lab work and practice
-- notes/ — concept reasoning notes
-- findings/ — real findings, self-written, defensible
-- real-app-analysis/ — real application audits
+| Folder | Contents |
+|--------|----------|
+| `labs/portswigger/` | Completed labs — XSS, SQLi, CSRF, Access Control, Business Logic |
+| `notes/` | Concept reasoning notes per vulnerability class |
+| `findings/` | Self-written security findings in report format |
+| `real-app-analysis/` | Real application audits with trust boundary mapping |
+
+---
+
+## Topics Covered
+- XSS — DOM, Reflected, Stored (HTML body, attribute, JS string, URL contexts)
+- SQL Injection — including blind variants
+- CSRF — SameSite, SOP distinctions, token bypass
+- IDOR — horizontal and vertical privilege escalation
+- Access Control — multi-step workflows, identity vs session confusion
+- Business Logic — trust chaining, state manipulation
+- Password Reset Poisoning — backend trust boundary analysis
+
+---
 
 ## Tools
-Burp Suite, Browser DevTools, PortSwigger Web Security Academy
-
+Burp Suite, Browser DevTools, PortSwigger Web Security Academy, HackerOne
