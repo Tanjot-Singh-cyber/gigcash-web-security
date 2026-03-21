@@ -101,6 +101,8 @@ Producing SAFE/WEAK/VULN conclusions with written justification.
  Target platforms: HackerOne bug bounty programs
 Primary tool: Burp Suite + Chrome
 
+Day 46 — hackerone.com — GraphQL recon + User object enumeration — SAFE (unconfirmed) — Introspection disabled, address field exists on User type but returns null across all tested accounts, second test account needed to confirm access control
+
 
 
 
