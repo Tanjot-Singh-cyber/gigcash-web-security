@@ -101,7 +101,17 @@ Producing SAFE/WEAK/VULN conclusions with written justification.
  Target platforms: HackerOne bug bounty programs
 Primary tool: Burp Suite + Chrome
 
-Day 46 — hackerone.com — GraphQL recon + User object enumeration — SAFE (unconfirmed) — Introspection disabled, address field exists on User type but returns null across all tested accounts, second test account needed to confirm access control
+Day 46 — hackerone.com — GraphQL recon + User object enumeration — SAFE (unconfirmed) — Introspection disabled, 
+address field exists on User type but returns null across all tested accounts, 
+second test account needed to confirm access control
+
+Day 47 — hackerone.com — HAI Report Assistant
+1. Search input — keywords not reflected in response, XSS ruled out
+2. Unauthenticated users can see metadata of undisclosed reports 
+   (reporter, program, bounty, time) — concluded intentional by design
+3. Feedback form submits to Intercom (api-iam.intercom.io) — 
+   third party, out of scope
+
 
 
 
