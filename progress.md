@@ -112,6 +112,15 @@ Day 47 — hackerone.com — HAI Report Assistant
 3. Feedback form submits to Intercom (api-iam.intercom.io) — 
    third party, out of scope
 
+Day 48 — hackerone.com — /edit-profile stored XSS testing
+1. Website field — server-side URL validation blocks 
+   javascript: and data: URIs
+2. Bio field — input stored but HTML encoded on output, 
+   CSP blocks execution  
+3. Name field — same, HTML encoded
+Conclusion: No stored XSS. Defenses are application-wide 
+— output encoding + CSP. Moving to api.hackerone.com next session.
+
 
 
 
