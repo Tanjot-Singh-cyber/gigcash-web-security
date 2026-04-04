@@ -121,6 +121,29 @@ Day 48 — hackerone.com — /edit-profile stored XSS testing
 Conclusion: No stored XSS. Defenses are application-wide 
 — output encoding + CSP. Moving to api.hackerone.com next session.
 
+Day 49 — tines.com — Profile update GraphQL mutation
+contains hidden fields isAdmin and isActive not visible 
+in UI but client-controlled. Potential mass assignment / 
+privilege escalation. Needs second account to confirm.
+
+Day 50 — tines.com — LLM chat, Story IDOR, Credit Allocation testing
+
+1. LLM prompt injection — tested direct extraction, developer mode 
+   jailbreak, context manipulation, and file upload injection. All 
+   blocked. Well defended implementation. Not a finding.
+
+2. Story name IDOR — decoded base64 story IDs (Story-112194 pattern), 
+   tested sequential IDs via Burp Repeater. Server returns generic 
+   "Story not found" for all non-owned IDs. Proper authorization 
+   controls. Not a finding.
+
+3. Credit allocation mutation — found teamAllocationChangeMutation 
+   with base64 encoded teamIds. Tested negative values (rejected 
+   server-side), large values (accepted — no upper bound). Attempted 
+   cross-team modification of Team-104470 — appeared successful but 
+   confirmed team belongs to own tenant. Not a cross-tenant IDOR.
+
+
 
 
 
