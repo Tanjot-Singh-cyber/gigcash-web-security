@@ -143,6 +143,15 @@ Day 50 — tines.com — LLM chat, Story IDOR, Credit Allocation testing
    cross-team modification of Team-104470 — appeared successful but 
    confirmed team belongs to own tenant. Not a cross-tenant IDOR.
 
+ Day 51 — tines.com — Target wrap-up
+
+isAdmin/isActive fields — concluded safe. Server-side 
+authorization likely validates role from session token, 
+not client-supplied fields. Common pattern in mature GraphQL 
+implementations. Not a finding.
+
+
+
 
 
 
