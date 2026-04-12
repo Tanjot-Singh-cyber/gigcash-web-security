@@ -4,7 +4,7 @@ This folder contains my deep-dives into real-world applications. These aren't ju
 
 ---
 
-## 🔍 The Reports
+##  The Reports
 
 ### [hackerone.com](./hackerone-assessment.md) — March 2026
 **Focus:** Breaking down GraphQL queries and testing how the site protects user data.
@@ -14,7 +14,7 @@ This folder contains my deep-dives into real-world applications. These aren't ju
 
 ---
 
-## 🛡️ The Goal
+##  The Goal
 
 While no exploitable bugs were found in these specific targets, these files document my actual workflow:
 
