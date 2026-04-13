@@ -143,13 +143,18 @@ Day 50 — tines.com — LLM chat, Story IDOR, Credit Allocation testing
    cross-team modification of Team-104470 — appeared successful but 
    confirmed team belongs to own tenant. Not a cross-tenant IDOR.
 
- Day 51 — tines.com — Target wrap-up
 
+Day 51 — tines.com — Target wrap-up
 isAdmin/isActive fields — concluded safe. Server-side 
 authorization likely validates role from session token, 
 not client-supplied fields. Common pattern in mature GraphQL 
 implementations. Not a finding.
 
+Day 52 : Target: subspace.money (Bugbase)
+Tested `subspace.money` (BugBase) and identified a Potential IDOR in the GraphQL `getBankDetails` query.
+The endpoint fails to validate if the requesting user owns the targeted `user_id`, returning a `200 OK` for cross-user UUID queries. 
+This creates an attack chain where financial PII (Bank/UPI info) could be leaked to any authenticated user.
+Reported the lack of server-side access control as a High severity finding.
 
 
 
