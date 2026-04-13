@@ -156,6 +156,13 @@ The endpoint fails to validate if the requesting user owns the targeted `user_id
 This creates an attack chain where financial PII (Bank/UPI info) could be leaked to any authenticated user.
 Reported the lack of server-side access control as a High severity finding.
 
+Day 53 — 'subspace.money' — Wallet, cart, addresses, search testing
+- Payment mutation (whatsubCreateUPIIntentRequest) — cross-user blocked
+- Add address mutation — cross-user blocked  
+- Add to cart mutation — cross-user blocked, negative amounts blocked
+- Order history search — input reflected but parameterized, SQLi not possible
+- Pattern confirmed: write operations protected, getBankDetails read operation unprotected (already reported)
+
 
 
 
