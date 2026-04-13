@@ -157,10 +157,10 @@ This creates an attack chain where financial PII (Bank/UPI info) could be leaked
 Reported the lack of server-side access control as a High severity finding.
 
 Day 53 : Target: `subspace.money` (BugBase)
-- Activity: Conducted deep-dive authorization testing on GraphQL mutations and search filters.
-- Findings: Verified that all write operations—specifically `whatsubCreateUPIIntentRequest`, `insert_whatsub_addresses_one`, and
+ Activity: Conducted deep-dive authorization testing on GraphQL mutations and search filters.
+ Findings: Verified that all write operations—specifically `whatsubCreateUPIIntentRequest`, `insert_whatsub_addresses_one`, and
  `whatsubAddAmountToCart`—properly enforce server-side access controls.
--Conclusion: The platform shows a strong security posture across core logic,
+Conclusion: The platform shows a strong security posture across core logic,
  which highlights the getBankDetails query as a significant outlier and
  the only endpoint failing to validate cross-user UUID requests.ch highlights the getBankDetails query as a significant outlier and
  the only endpoint failing to validate cross-user UUID requests.
