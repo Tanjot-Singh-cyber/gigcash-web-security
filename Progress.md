@@ -156,12 +156,14 @@ The endpoint fails to validate if the requesting user owns the targeted `user_id
 This creates an attack chain where financial PII (Bank/UPI info) could be leaked to any authenticated user.
 Reported the lack of server-side access control as a High severity finding.
 
-Day 53 — 'subspace.money' — Wallet, cart, addresses, search testing
-- Payment mutation (whatsubCreateUPIIntentRequest) — cross-user blocked
-- Add address mutation — cross-user blocked  
-- Add to cart mutation — cross-user blocked, negative amounts blocked
-- Order history search — input reflected but parameterized, SQLi not possible
-- Pattern confirmed: write operations protected, getBankDetails read operation unprotected (already reported)
+Day 53 : Target: `subspace.money` (BugBase)
+- Activity: Conducted deep-dive authorization testing on GraphQL mutations and search filters.
+- Findings: Verified that all write operations—specifically `whatsubCreateUPIIntentRequest`, `insert_whatsub_addresses_one`, and
+ `whatsubAddAmountToCart`—properly enforce server-side access controls.
+-Conclusion: The platform shows a strong security posture across core logic,
+ which highlights the getBankDetails query as a significant outlier and
+ the only endpoint failing to validate cross-user UUID requests.ch highlights the getBankDetails query as a significant outlier and
+ the only endpoint failing to validate cross-user UUID requests.
 
 
 
