@@ -166,6 +166,27 @@ Conclusion: The platform shows a strong security posture across core logic,
  the only endpoint failing to validate cross-user UUID requests.
 
 
+Day 54: Target: mrblomblo/blombooru (GitHub OSS)
+Activity: Static code review — identified SSRF vulnerability.
+Findings: The GET /api/booru-import/proxy-image endpoint accepts a user-supplied url parameter with no validation beyond startswith("http"). Traced user input through proxy_image() → get_client_for_url() → requests.get(). No IP validation, no blocklist, redirects enabled by default.
+Submitted: GitHub Security Advisory GHSA-5c5w-x8jp-fjqw. Credit accepted. Pending developer response.
+CWE: CWE-918 — Server-Side Request Forgery.
+
+Day 55: Target: mrblomblo/blombooru (GitHub OSS)
+Activity: Live PoC confirmation on local instance.
+Setup: Installed PostgreSQL 18, configured .env, ran Blombooru locally.
+PoC: Sent GET /api/booru-import/proxy-image?url=http://127.0.0.1:6379 — server returned proxy error confirming internal connection attempt. Sent http://127.0.0.1:8000 — server hung indefinitely in recursive self-request. Both confirm arbitrary internal request execution.
+Updated advisory with live PoC evidence, screenshot, and Admin SSRF impact argument.
+Severity: Medium standalone, High on cloud deployments.
+
+Day 56: Target: edihasaj/tuspyserver (GitHub OSS)
+Activity: Static code review + live testing — path traversal investigation.
+Findings: uuid path parameter passed directly to os.path.join(files_dir, uid) without validation. Python confirmed path escapes files_dir via .. sequences. Upload-Concat header also passes bare UIDs without sanitization.
+Live testing: Deployed under WSL using uvicorn and Hypercorn. Both servers normalize .. at HTTP layer per RFC 3986 — traversal blocked before reaching application code.
+Conclusion: Code-level vulnerability, not exploitable via standard HTTP servers. Reported honestly via GitHub issue #83.
+CVE: Not applicable — no confirmed exploitation path.
+CWE: CWE-22 — Path Traversal (theoretical).
+
 
 
 
