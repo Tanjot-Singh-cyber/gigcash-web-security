@@ -187,6 +187,16 @@ Conclusion: Code-level vulnerability, not exploitable via standard HTTP servers.
 CVE: Not applicable — no confirmed exploitation path.
 CWE: CWE-22 — Path Traversal (theoretical).
 
+Day 57: 
+Target: cedricbonhomme/newspipe
+Vuln: SSRF protection bypass via feed edit endpoint
+CWE: CWE-918 — Server-Side Request Forgery
+Affected file: newspipe/web/views/feed.py — process_form()
+Root cause: validate_url() called on feed CREATE but not on feed EDIT
+Crawler fetches feed.link directly with no SSRF check
+Reported: Email to cedric@cedricbonhomme.org
+Status: Pending response
+
 
 
 
