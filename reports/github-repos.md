@@ -1,7 +1,6 @@
 # Security Research Report
 **Researcher:** Tanjot Singh  
 **GitHub:** https://github.com/Tanjot-Singh-cyber  
-**Period:** May 13–17, 2026  
 **Methodology:** Static code review + live PoC testing  
 
 ---
