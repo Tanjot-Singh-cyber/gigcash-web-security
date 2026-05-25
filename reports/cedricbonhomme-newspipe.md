@@ -1,4 +1,4 @@
-## Report 3 — cedricbonhomme/newspipe
+## Report — cedricbonhomme/newspipe
 
 ### Target Overview
 
@@ -117,3 +117,10 @@ if feed_id is not None:
 | TBD | CVE requested |
 
 ---
+
+## Summary
+
+| Target | Vuln | Severity | Status |
+|---|---|---|---|
+| newspipe | SSRF bypass — unprotected edit path | Medium | Email sent — pending response |
+
