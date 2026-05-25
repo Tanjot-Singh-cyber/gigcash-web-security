@@ -148,7 +148,6 @@ Also set `allow_redirects=False` on the requests call.
 | Target | Vuln | Severity | Status |
 |---|---|---|---|
 | blombooru | SSRF — unvalidated proxy URL | Medium/High | Advisory live — pending response |
-| tuspyserver | Path traversal — HTTP layer mitigated | N/A | Closed — defense-in-depth discussion |
-| newspipe | SSRF bypass — unprotected edit path | Medium | Email sent — pending response |
+
 
 
