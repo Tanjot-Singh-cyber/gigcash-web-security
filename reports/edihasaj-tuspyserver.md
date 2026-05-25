@@ -89,3 +89,10 @@ Code-level vulnerability exists. Standard HTTP servers mitigate it at the routin
 Code-level vulnerability ≠ exploitable vulnerability. Static analysis finds candidates. Live testing confirms reality. Reporting accurately when a finding is weaker than expected is the correct approach.
 
 ---
+## Summary
+
+| Target | Vuln | Severity | Status |
+|---|---|---|---|
+| tuspyserver | Path traversal — HTTP layer mitigated | N/A | Closed — defense-in-depth discussion |
+
+
