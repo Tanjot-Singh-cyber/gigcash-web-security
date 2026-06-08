@@ -220,6 +220,11 @@ Flask | safe XSS (AI-generated content, not user input), bot tools RCE
 (internal AI tool, not HTTP exposed). All ruled out via manual analysis. 
 Status: No exploitable findings.
 
+Day 61: Target: scanapi/scanapi Method: Semgrep + manual review 
+2 findings — eval() protected by RestrictedPython (by design), href XSS 
+in local report template (no external users). All ruled out. 
+Status: No exploitable findings.
+
 
 
 
