@@ -25,7 +25,7 @@ Every target is approached the same way:
 
 | Target | Vulnerability | Severity | Status |
 |--------|--------------|----------|--------|
-| blombooru (FastAPI) | SSRF — CWE-918 | High | [GHSA-5c5w-x8jp-fjqw](https://github.com/advisories/GHSA-5c5w-x8jp-fjqw) • CVE pending |
+| blombooru (FastAPI) | SSRF — CWE-918 | High | GHSA-5c5w-x8jp-fjqw • CVE pending |
 | newspipe | SSRF bypass — missing validate_url() on feed edit path | Medium | Disclosed to maintainer |
 | subspace.money | IDOR/BOLA — getBankDetails GraphQL accepts cross-user UUIDs | High | Submitted to Bugbase |
 
