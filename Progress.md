@@ -201,9 +201,17 @@ Day 58 :
 Target: CJackHwang/AIstudioProxyAPI (GitHub OSS, archived) 
 Activity: Static code review — SSRF + auth bypass investigation. 
 Findings: /api/proxy/test endpoint accepts user-controlled test_url parameter passed directly to httpx.AsyncClient.get() with follow_redirects=True and zero validation. 
-APIKeyAuthMiddleware in app.py only protects /v1/ routes — /api/ routes including the proxy endpoint are completely unauthenticated. Compounding factor: default fresh install creates empty key.txt, causing verify_api_key() to return True for all requests. Full unauthenticated SSRF chain confirmed via static analysis. 
+APIKeyAuthMiddleware in app.py only protects /v1/ routes — /api/ routes including the proxy endpoint are completely unauthenticated. 
+Compounding factor: default fresh install creates empty key.txt, causing verify_api_key() to return True for all requests. Full unauthenticated SSRF chain confirmed via static analysis. 
 Live PoC not tested — Playwright + Camoufox setup required. CVE: Not assigned — repo archived, no disclosure channel available. 
 CWE: CWE-918 — Server-Side Request Forgery. Status: Documented in findings/, no patch possible.
+
+
+Day 59: Target: mhdzumair/mediaflow-proxy (GitHub OSS, 724 stars, active) Method: Static code review Findings:
+api_password defaults to None — all proxy routes unauthenticated by default. 
+sanitize_url() in routes/proxy.py fixes encoding only, no hostname/IP validation. 
+Private ranges and loopback not blocked. Combined impact: unauthenticated SSRF via unvalidated destination parameter.
+CWE: CWE-918 — Server-Side Request Forgery. Disclosed: Email to mhdzumair@gmail.com Status: Awaiting response
 
 
 
