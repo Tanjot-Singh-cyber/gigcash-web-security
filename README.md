@@ -1,7 +1,6 @@
 # Gigcash – Web Application Security Research
 **Tanjot Singh** | B.Tech CSE (Cybersecurity), MIET Jammu  
-[LinkedIn](https://www.linkedin.com/in/tanjot-singh-69579a352) • 
-[HeaderGuard](https://github.com/Tanjot-Singh-cyber/headerguard)
+[LinkedIn](https://www.linkedin.com/in/tanjot-singh-69579a352)
 
 ---
 
@@ -23,26 +22,10 @@ Every target is approached the same way:
 
 | Target | Vulnerability | Severity | Status |
 |--------|--------------|----------|--------|
-| blombooru (FastAPI) | SSRF — unvalidated URL parameter in `/proxy-image` — CWE-918 | High | GHSA-5c5w-x8jp-fjqw · Fix planned v1.40.0 · CVE in progress |
-| newspipe (Flask) | SSRF bypass — `validate_url()` absent on feed edit path — CWE-918 | Medium | Disclosed to maintainer |
-| mediaflow-proxy (FastAPI) | Unauthenticated SSRF — no-auth default + unvalidated destination — CWE-918 | Medium | Disclosed to maintainer |
-| subspace.money | IDOR/BOLA — `getBankDetails` GraphQL accepts cross-user UUIDs without auth check — CWE-639 | High | Submitted to Bugbase |
-
----
-
-## Projects
-
-### HeaderGuard
-HTTP security header analyzer + TLS/SSL inspector with AI-powered 
-contextual analysis.
-
-- Layer 7: HTTP security header analysis with weighted grading
-- Layer 4: TLS/SSL inspection via pure Python stdlib (zero external dependencies)
-- AI layer: Gemini contextual analysis with confidence scoring
-- Design principle: never outputs "Safe" — confidence scoring on every finding
-- V2 complete and deployed
-
-[→ View HeaderGuard](https://github.com/Tanjot-Singh-cyber/headerguard)
+| blombooru (FastAPI) | SSRF — unvalidated URL parameter in `/proxy-image`, bypasses `startswith("http")` check — CWE-918 | High | GHSA-5c5w-x8jp-fjqw · Fix planned v1.40.0 · CVE in progress |
+| newspipe (Flask) | SSRF bypass — `validate_url()` called on feed CREATE path but absent on feed EDIT path — CWE-918 | Medium | Disclosed to maintainer via email |
+| mediaflow-proxy (FastAPI) | Unauthenticated SSRF — `api_password` defaults to `None`, no destination validation — CWE-918 | Medium | Disclosed to maintainer via email |
+| subspace.money | IDOR/BOLA — `getBankDetails` GraphQL query accepts cross-user UUIDs without authorization check — CWE-639 | High | Submitted to Bugbase |
 
 ---
 
@@ -62,17 +45,17 @@ contextual analysis.
 - SQL Injection — classic and blind
 - CSRF — SameSite, SOP, token bypass
 - IDOR / BOLA — horizontal and vertical privilege escalation
-- SSRF — server-side request forgery, bypass techniques, cloud metadata escalation
-- Command Injection — shell=True sinks, argument injection
-- SSTI — Jinja2 template engine exploitation
-- XXE — external entity injection via XML parsers
-- Insecure Deserialization — pickle.loads and unsafe deserializers
+- SSRF — server-side request forgery, internal network enumeration, cloud metadata access
 - Access Control — multi-step workflows, identity vs session confusion
 - Business Logic — trust chaining, state manipulation
+- Command Injection — shell=True sinks, argument injection
+- SSTI — Jinja2 template injection
+- XXE — external entity injection via XML parsers
+- Insecure Deserialization — pickle.loads on attacker-controlled input
 
 ---
 
 ## Tools
 
 Burp Suite, Browser DevTools, PortSwigger Web Security Academy, 
-Semgrep, Bugbase
+Semgrep, Bugbase, GitHub Security Advisories
