@@ -1,5 +1,4 @@
 # Gigcash – Web Application Security Research
-
 **Tanjot Singh** | B.Tech CSE (Cybersecurity), MIET Jammu  
 [LinkedIn](https://www.linkedin.com/in/tanjot-singh-69579a352) • 
 [HeaderGuard](https://github.com/Tanjot-Singh-cyber/headerguard)
@@ -13,7 +12,6 @@ real findings, OSS vulnerability research, and production-grade
 security tooling.
 
 Every target is approached the same way:
-
 1. Map the state — what is the application tracking?
 2. Identify trust boundaries — what does the server blindly trust?
 3. Form a hypothesis — what could break if that trust is wrong?
@@ -25,9 +23,10 @@ Every target is approached the same way:
 
 | Target | Vulnerability | Severity | Status |
 |--------|--------------|----------|--------|
-| blombooru (FastAPI) | SSRF — CWE-918 | High | GHSA-5c5w-x8jp-fjqw • CVE pending |
-| newspipe | SSRF bypass — missing validate_url() on feed edit path | Medium | Disclosed to maintainer |
-| subspace.money | IDOR/BOLA — getBankDetails GraphQL accepts cross-user UUIDs | High | Submitted to Bugbase |
+| blombooru (FastAPI) | SSRF — unvalidated URL parameter in `/proxy-image` — CWE-918 | High | GHSA-5c5w-x8jp-fjqw · Fix planned v1.40.0 · CVE in progress |
+| newspipe (Flask) | SSRF bypass — `validate_url()` absent on feed edit path — CWE-918 | Medium | Disclosed to maintainer |
+| mediaflow-proxy (FastAPI) | Unauthenticated SSRF — no-auth default + unvalidated destination — CWE-918 | Medium | Disclosed to maintainer |
+| subspace.money | IDOR/BOLA — `getBankDetails` GraphQL accepts cross-user UUIDs without auth check — CWE-639 | High | Submitted to Bugbase |
 
 ---
 
@@ -38,9 +37,10 @@ HTTP security header analyzer + TLS/SSL inspector with AI-powered
 contextual analysis.
 
 - Layer 7: HTTP security header analysis with weighted grading
-- Layer 4: TLS/SSL inspection via pure Python stdlib
+- Layer 4: TLS/SSL inspection via pure Python stdlib (zero external dependencies)
 - AI layer: Gemini contextual analysis with confidence scoring
 - Design principle: never outputs "Safe" — confidence scoring on every finding
+- V2 complete and deployed
 
 [→ View HeaderGuard](https://github.com/Tanjot-Singh-cyber/headerguard)
 
@@ -62,7 +62,11 @@ contextual analysis.
 - SQL Injection — classic and blind
 - CSRF — SameSite, SOP, token bypass
 - IDOR / BOLA — horizontal and vertical privilege escalation
-- SSRF — server-side request forgery, OOB detection via Burp Collaborator
+- SSRF — server-side request forgery, bypass techniques, cloud metadata escalation
+- Command Injection — shell=True sinks, argument injection
+- SSTI — Jinja2 template engine exploitation
+- XXE — external entity injection via XML parsers
+- Insecure Deserialization — pickle.loads and unsafe deserializers
 - Access Control — multi-step workflows, identity vs session confusion
 - Business Logic — trust chaining, state manipulation
 
